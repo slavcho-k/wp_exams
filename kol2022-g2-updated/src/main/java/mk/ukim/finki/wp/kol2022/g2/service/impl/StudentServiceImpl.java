@@ -6,6 +6,11 @@ import mk.ukim.finki.wp.kol2022.g2.model.StudentType;
 import mk.ukim.finki.wp.kol2022.g2.repository.CourseRepository;
 import mk.ukim.finki.wp.kol2022.g2.repository.StudentRepository;
 import mk.ukim.finki.wp.kol2022.g2.service.StudentService;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -15,13 +20,15 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class StudentServiceImpl implements StudentService {
+public class StudentServiceImpl implements StudentService, UserDetailsService {
     private final StudentRepository studentRepository;
     private final CourseRepository courseRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public StudentServiceImpl(StudentRepository studentRepository, CourseRepository courseRepository) {
+    public StudentServiceImpl(StudentRepository studentRepository, CourseRepository courseRepository, PasswordEncoder passwordEncoder) {
         this.studentRepository = studentRepository;
         this.courseRepository = courseRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -42,7 +49,7 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.save(new Student(
                 name,
                 email,
-                password,
+                passwordEncoder.encode(password),
                 type,
                 courses,
                 enrollmentDate
@@ -56,7 +63,7 @@ public class StudentServiceImpl implements StudentService {
         if (studentOptional.isPresent()) {
             studentOptional.get().setName(name);
             studentOptional.get().setEmail(email);
-            studentOptional.get().setPassword(password);
+            studentOptional.get().setPassword(passwordEncoder.encode(password));
             studentOptional.get().setType(type);
             studentOptional.get().setCourses(courseRepository.findAllById(coursesId));
             studentOptional.get().setEnrollmentDate(enrollmentDate);
@@ -85,10 +92,25 @@ public class StudentServiceImpl implements StudentService {
             return studentRepository.findAllByCoursesContainsAndEnrollmentDateBefore(courseRepository.findById(courseId).get(), LocalDate.now().minusYears(yearsOfStudying));
         } else if (courseId == null && yearsOfStudying != null) {
             return studentRepository.findAllByEnrollmentDateBefore(LocalDate.now().minusYears(yearsOfStudying));
-        } else if(courseId != null){
+        } else if (courseId != null) {
             return studentRepository.findAllByCoursesContains(courseRepository.findById(courseId).get());
         } else {
             return studentRepository.findAll();
         }
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional<Student> studentOptional = studentRepository.findByEmail(username);
+
+        if (!studentOptional.isPresent()) {
+            throw new UsernameNotFoundException("Student doesn't exist");
+        }
+
+        return User.builder()
+                .username(studentOptional.get().getEmail())
+                .password(studentOptional.get().getPassword())
+                .authorities("ROLE_" + studentOptional.get().getType().toString())
+                .build();
     }
 }
