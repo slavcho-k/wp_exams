@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+
+<div>
+    <form id="filter-form" action="/" method="get">
+        <label for="f1">Launched in days: </label>
+        <input id="f1" type="number" name="activeMoreThanDays"/>
+        <label for="f2">Owner</label>
+        <select id="f2" name="ownerId">
+            <option value="">All</option>
+            <option th:each="user: ${owners}" th:value="${user.getId()}" th:text="${user.getUsername()}">
+                [user.username]
+            </option>
+        </select>
+        <button id="filter" type="submit">Filter</button>
+    </form>
+    <div>
+        <th:block sec:authorize="hasRole('SYSADMIN')">
+            <a href="/VirtualServers/add" class="add-item">
+                Add
+            </a>
+        </th:block>
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>IPAddress</th>
+            <th>OSType</th>
+            <th>Owners</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="server: ${servers}" class="item">
+            <td th:text="${server.getInstanceName()}">[VirtualServer.name]</td>
+            <td th:text="${server.getIpAddress()}">[VirtualServer.ipaddress]</td>
+            <td th:text="${server.getOSType().name()}">[VirtualServer.ostype]</td>
+            <td th:each="owner: ${server.getOwners()}">
+                <span th:text="${owner.getUsername()}" class="item-rel"> [owner.username]</span>
+            </td>
+            <td>
+                <th:block>
+                    <form sec:authorize="hasRole('SYSADMIN')"
+                          th:action="@{'/VirtualServers/{id}/delete' (id=${server.getId()})}" method="post">
+                        <button type="submit" class="delete-item">Delete</button>
+                    </form>
+                    <a sec:authorize="hasRole('SYSADMIN')"
+                       th:href="@{/VirtualServers/{id}/edit (id=${server.getId()})}"
+                       class="edit-item">
+                        Edit
+                    </a>
+                </th:block>
+
+                <form th:action="@{'/VirtualServers/{id}/terminate' (id=${server.getId()})}" method="post"
+                >
+                    <button class="change-item" th:if="${server.getTerminated() == false}">Terminate</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+</body>
+</html>

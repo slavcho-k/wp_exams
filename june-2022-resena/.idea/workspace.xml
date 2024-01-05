@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b781f527-86b2-4126-aecd-1b1d244169ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/g2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/Kol2022Group2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/StudentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/exceptions/InvalidCourseIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/model/exceptions/InvalidStudentIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/repository/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/service/impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/java/mk/ukim/finki/wp/kol2022/g2/web/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/kol2022/g2/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/AddOrEditForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/src/test/java/mk/ukim/finki/wp/kol2022/g2/selenium/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/Kol2022Group2Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/config/DataInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/model/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/model/StudentType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/model/exceptions/InvalidCourseIdException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/model/exceptions/InvalidStudentIdException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/repository/CourseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/service/CourseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/service/impl/CourseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/service/impl/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/mk/ukim/finki/wp/kol2022/g2/web/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/classes/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/CodeExtractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/ExamAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/ExamAssertionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/FailedSubmissionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/LoadSolution$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/LoadSolution$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/LoadSolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/exam/util/SubmissionHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/kol2022/g2/SeleniumScenarioTest$ViewMatcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/kol2022/g2/SeleniumScenarioTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/kol2022/g2/selenium/AbstractPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/kol2022/g2/selenium/AddOrEditForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/kol2022/g2/selenium/ItemsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g2-updated/target/test-classes/mk/ukim/finki/wp/kol2022/g2/selenium/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/Kol2022Group3Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/config/DataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/ForumUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/ForumUserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/Interest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/exceptions/InvalidForumUserIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/model/exceptions/InvalidInterestIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/repository/ForumUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/repository/InterestRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/ForumUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/InterestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/impl/ForumUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/service/impl/InterestServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/java/mk/ukim/finki/wp/kol2022/g3/web/ForumUsersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/exam/util/CodeExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/exam/util/ExamAssertionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/exam/util/FailedSubmissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/exam/util/LoadSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/exam/util/SubmissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/kol2022/g3/SeleniumScenarioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/AddOrEditForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/ItemsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kol2022-g3-main/src/test/java/mk/ukim/finki/wp/kol2022/g3/selenium/LoginPage.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Dvx3dwEczzIXDUonU2IhTI4bkH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Anastasija/Downloads/june-2022/june-2022-zip/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "0120a4f9196a5f9eb9f523f31f914da7",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.SeleniumScenarioTest">
+    <configuration name="SeleniumScenarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.june2022.g1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.june2022.g1" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.june2022.g1.SeleniumScenarioTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumScenarioTest.test_filter_5pt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.june2022.g1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.june2022.g1" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.june2022.g1.SeleniumScenarioTest" />
+      <option name="METHOD_NAME" value="test_filter_5pt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumScenarioTest.test_mark_terminated_5pt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.june2022.g1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.june2022.g1" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.june2022.g1.SeleniumScenarioTest" />
+      <option name="METHOD_NAME" value="test_mark_terminated_5pt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumScenarioTest.test_security_buttons_10pt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.june2022.g1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.june2022.g1" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.june2022.g1.SeleniumScenarioTest" />
+      <option name="METHOD_NAME" value="test_security_buttons_10pt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumScenarioTest.test_security_urls_10pt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.wp.june2022.g1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mk.ukim.finki.wp.june2022.g1" />
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.wp.june2022.g1.SeleniumScenarioTest" />
+      <option name="METHOD_NAME" value="test_security_urls_10pt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="June2022Group1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="g1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.wp.june2022.g1.June2022Group1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SeleniumScenarioTest" />
+        <item itemvalue="JUnit.SeleniumScenarioTest.test_filter_5pt" />
+        <item itemvalue="JUnit.SeleniumScenarioTest.test_security_buttons_10pt" />
+        <item itemvalue="JUnit.SeleniumScenarioTest.test_security_urls_10pt" />
+        <item itemvalue="JUnit.SeleniumScenarioTest.test_mark_terminated_5pt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b781f527-86b2-4126-aecd-1b1d244169ca" name="Changes" comment="" />
+      <created>1661593167595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661593167595</updated>
+      <workItem from="1661593171309" duration="88000" />
+      <workItem from="1661767129692" duration="90000" />
+      <workItem from="1704488381955" duration="8085000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

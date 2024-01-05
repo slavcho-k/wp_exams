@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+
+<div>
+    <form id="filter-form" method="GET" action="/">
+        <label for="f1">YearsOfStudying</label>
+        <input id="f1" type="number" name="yearsOfStudying"/>
+        <label for="f2">Course</label>
+        <select id="f2" name="courseId">
+            <option value="">All</option>
+            <option th:each="course : ${courses}" th:text="${course.getName()}" th:value="${course.getId()}">[course]
+            </option>
+        </select>
+        <button id="filter" type="submit">Filter</button>
+    </form>
+    <th:block sec:authorize="hasRole('ADMIN')">
+        <a th:href="@{/students/add}" class="add-item">
+            Add
+        </a>
+    </th:block>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Courses</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="student : ${students}" class="item">
+            <td th:text="${student.getName()}">[student.name]</td>
+            <td th:text="${student.getEmail()}">[student.email]</td>
+            <td th:text="${student.getType().name()}">[student.type]</td>
+            <td>
+                <span th:each="course : ${student.getCourses()}" th:text="${course.getName()}" class="item-rel">[course.name]</span>
+            </td>
+            <th:block sec:authorize="hasRole('ADMIN')">
+                <td>
+                    <form method="POST" th:action="@{'/students/{id}/delete' (id=${student.getId()})}">
+                        <button type="submit" class="delete-item">Delete</button>
+                    </form>
+                    <a class="edit-item" th:href="@{/students/{id}/edit (id=${student.getId()})}">Edit</a>
+                </td>
+            </th:block>
+        </tr>
+    </table>
+
+</div>
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+</body>
+</html>
