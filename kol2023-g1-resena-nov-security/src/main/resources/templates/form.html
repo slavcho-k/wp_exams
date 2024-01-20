@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+
+<form th:action="@{ ${player != null} ? '/players/' + ${player.id} : '/players' }" th:method="post">
+    <div>
+        <label for="name">Name</label>
+        <input type="text"
+               id="name"
+               name="name"
+               th:value="${player?.getName()}"
+               required>
+    </div>
+    <div>
+        <label for="bio">Biography</label>
+        <input type="text"
+               id="bio"
+               name="bio"
+               th:value="${player?.getBio()}"
+               required>
+    </div>
+    <div>
+        <label for="pointsPerGame">Points Per Game</label>
+        <input id="pointsPerGame"
+               name="pointsPerGame"
+               th:value="${player?.getPointsPerGame()}"
+               required>
+    </div>
+    <div>
+        <label>Player Position</label><br/>
+        <select id="position" name="position" multiple="multiple" size="5">
+            <!-- For each position you should have one <option> like below  -->
+            <option th:each="position : ${positions}"
+                    th:value="${position.name()}"
+                    th:text="${position.name()}"
+                    th:selected="${position.equals(player?.getPosition())}"
+            > [position.name]
+            </option>
+        </select>
+    </div>
+    <div>
+        <label>Team</label><br/>
+        <select id="team" name="team" multiple="multiple" size="5">
+            <!-- For each team you should have one <option> like below  -->
+            <option th:each="team : ${teams}"
+                    th:value="${team.getId()}"
+                    th:text="${team.getName()}"
+                    th:selected="${player?.getTeam()?.getId()?.equals(team.getId())}"
+            > [team.name]
+            </option>
+        </select>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/players" type="button" class="btn btn-primary">Back to players</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
