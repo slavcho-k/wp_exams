@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+
+<div>
+    <form id="filter-form" action="/" method="get">
+        <label for="f1">YearsOfService</label>
+        <input id="f1" type="text" name="yearsOfService"/>
+        <label for="f2">Skill</label>
+        <select id="f2" name="skillId">
+            <option value="">All</option>
+            <option th:each="s : ${skills}"
+                    th:value="${s.getId()}"
+                    th:text="${s.getName()}"
+            > [skill]
+            </option>
+        </select>
+        <button id="filter" type="submit">Filter</button>
+    </form>
+    <div>
+        <!-- EmployeeController.showAdd (Only ADMIN can see this element)-->
+        <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+            <a href="/employees/add" class="add-item">
+                Add
+            </a>
+        </th:block>
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Skills</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="emp : ${employees}"
+            class="item">
+            <td th:text="${emp.getName()}">[employees.name]</td>
+            <td th:text="${emp.getEmail()}">[employees.email]</td>
+            <td th:text="${emp.getType()}">[employees.type]</td>
+            <td th:each="skill : ${emp.getSkills()}">
+                <span th:text="${skill.getName()}"
+                      class="item-rel"> [skill.name]</span>
+            </td>
+            <td>
+                <!-- EmployeeController.delete (Only ADMIN can see this element)-->
+                <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                    <form th:action="@{'/employees/{id}/delete' (id=${emp.getId()})}" method="post">
+                        <button type="submit" class="delete-item">Delete</button>
+                    </form>
+                    <!-- EmployeeController.showEdit (Only ADMIN can see this element)-->
+                    <a th:href="@{'/employees/{id}/edit' (id=${emp.getId()})}"
+                       class="edit-item">Edit</a>
+                </th:block>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+</body>
+</html>

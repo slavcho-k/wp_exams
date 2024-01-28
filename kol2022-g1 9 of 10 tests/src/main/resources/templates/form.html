@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WP Exam</title>
+</head>
+<body>
+<!-- The form should submit to EmployeeController.create or EmployeeController.update,
+     depending on whether we are creating or editing an entity -->
+<form th:method="POST" th:action="@{ ${emp != null} ? '/employees/' + ${emp?.id} : '/employees' }">>
+    <div>
+        <label for="f1">Name</label>
+        <input type="text"
+               id="f1"
+               name="name"
+               th:value="${emp?.getName()}"
+               required>
+    </div>
+    <div>
+        <label for="f2">Email</label>
+        <input type="text"
+               id="f2"
+               name="email"
+               th:value="${emp?.getEmail()}"
+               required>
+    </div>
+    <div>
+        <label for="f3">Password</label>
+        <!-- Do not set the value here -->
+        <input type="password"
+               id="f3"
+               name="password"
+               th:value="${emp?.getPassword()}"
+               required>
+    </div>
+    <div>
+        <label for="f6">Employment Date</label>
+        <input type="date"
+               id="f6"
+               name="employmentDate"
+               th:value="${emp?.getEmploymentDate()}"
+               required>
+    </div>
+    <div>
+        <label>Type</label><br/>
+        <select id="f4" name="type">
+            <option th:each="t : ${types}"
+                    th:text="${t.name()}"
+                    th:value="${t.name()}"
+                    th:selected="${emp?.getType()?.equals(t)}"
+            > [type_name]
+            </option>
+        </select>
+    </div>
+    <div>
+        <label>Skills</label><br/>
+        <select id="f5" multiple name="skillId">
+            <option th:each="s : ${skills}"
+                    th:text="${s.getName()}"
+                    th:value="${s.getId()}"
+                    th:selected="${emp?.getSkills()?.contains(s)}"
+            > [skill.name]
+            </option>
+        </select>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+    <a id="back" href="/employees" type="button" class="btn btn-primary">Back to employees</a>
+</form>
+
+<div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
